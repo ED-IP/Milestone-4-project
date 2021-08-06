@@ -1,4 +1,4 @@
-<h1 align="center">Milestone Project 4, A site to promote and sell a new book series</h1>
+<h1 align="center">Milestone Project 4, A Simple site to promote and sell a new book series</h1>
 
 The objective of this page is to promote and allow/accept direct sells for a new book series
 

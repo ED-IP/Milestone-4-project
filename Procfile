@@ -1,0 +1,1 @@
+web: gunicorn scp_book_site.wsgi:application
