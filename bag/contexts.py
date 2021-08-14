@@ -10,6 +10,7 @@ def bag_contents(request):
     total = 0
     product_count = 0
     bag = request.session.get('bag', {})
+    print("Context bag", bag)
 
     for item_id, item_data in bag.items():
         if isinstance(item_data, int):
@@ -41,6 +42,8 @@ def bag_contents(request):
         free_delivery_delta = 0
 
     grand_total = delivery + total
+
+    print(bag_items)
 
     context = {
         'bag_items': bag_items,

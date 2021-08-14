@@ -43,6 +43,7 @@ def add_to_bag(request, item_id):
             messages.success(request, f'Added {product.title} to your bag')
 
     request.session['bag'] = bag
+    print(bag)
     return redirect(redirect_url)
 
 
