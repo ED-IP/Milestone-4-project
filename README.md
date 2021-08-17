@@ -1,6 +1,7 @@
-<h1 align="center">Milestone Project 4, A Simple site to promote and sell a new book series</h1>
+<h1 align="center">The SCP Archives Book Store</h1>
 
-The objective of this page is to promote and allow/accept direct sells for a new book series
+The objective of this page is to promote a new book series based on the [SCP Universe](https://scp-wiki.wikidot.com/) and allow/accept direct sells for new releases.
+Also there will be information about future publications.
 
 
 ## User Experience (UX)
@@ -37,8 +38,17 @@ The objective of this page is to promote and allow/accept direct sells for a new
 
 ### Languages Used
 
+- **[HTML]**
+	- **HTML** is used to create the structure of the web-page.
+
+- **[Bootstrap](https://getbootstrap.com/)**
+    - **Bootstrap** is used to provide css style and some JavaScript content.
+
+
 ### Frameworks, Libraries & Programs Used
 
+- **[Django](https://www.djangoproject.com/)**
+	
 
 ## Testing
 
@@ -50,7 +60,17 @@ The objective of this page is to promote and allow/accept direct sells for a new
 -   #### Owner Goals
 
     
-### Further Testing
+### Further Testing (not tested yet)
+
+- [W3C Validation tools](https://validator.w3.org/)
+   - All the HTML files were tested with the W3C validator, some html errors were found and fixed.
+   - Still there are errors that I think are related to the Jinja templates
+
+- [CSS Validator](https://jigsaw.w3.org/css-validator/)
+   - Style.css was tested with the css validator, no error was found
+
+- [JSHint](https://jshint.com/)
+   - script.js was tested with JSHint no warnings were given
 
 
 ### Known Bugs
@@ -61,9 +81,12 @@ The objective of this page is to promote and allow/accept direct sells for a new
 
 ### GitHub Pages
 
+### Heroku
 
 
 ## Credits
+
+- Information about the SCP universe was found in the [SCP Wiki](https://scp-wiki.wikidot.com/)
 
 ### Code
 
