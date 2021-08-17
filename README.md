@@ -48,9 +48,12 @@ Also there will be information about future publications.
 ### Frameworks, Libraries & Programs Used
 
 - **[Django](https://www.djangoproject.com/)**
+
+- **[Stripe](https://stripe.com/)**
 	
 
 ## Testing
+
 
 ### Testing User Stories from User Experience (UX) Section
 
