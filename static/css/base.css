@@ -3,17 +3,24 @@ html {
 }
 
 body {
-    background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed;
+    /* background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed; */
     background-size: cover;
-    height: calc(100vh -164px);
+    height: calc(100vh - 164px);
     color: #555;
     font-family: 'Lato'
 }
 
 /* custom css for the intro section */
 
-#intro {        
-    background-color: #dc3545;    
+#intro {
+    height: 400px;    
+    color: white;
+}
+
+#intro-image {
+    height: 400px;
+    background-color: red;
+    background: url('/media/Background_intro.jpg') no-repeat center center;
 }
 
 /* css from Bulma */

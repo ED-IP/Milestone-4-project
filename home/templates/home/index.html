@@ -2,53 +2,60 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
 
 {% block content %}
-    <section id="intro">
-        <div class="container h-100">
-            <div class="row h-75"></div>
-            <div class="row h-25">
-                <div class="offset-1 col-10 my-auto">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit eget ligula eget cursus. Donec ac dignissim enim. Suspendisse et enim in lacus venenatis vulputate. In at risus at massa aliquam pretium. Nam sed nibh quis dolor porttitor pretium. Cras porttitor dui ex, id elementum lacus consectetur vitae. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur non tortor in eros vehicula varius gravida ac massa. Vestibulum vehicula semper tincidunt.
-
-                        Integer laoreet elementum euismod. In nunc quam, viverra nec augue non, hendrerit gravida diam. Nullam nibh sapien, mattis ut molestie in, cursus et dui. Phasellus iaculis semper lectus lacinia convallis. Nullam sodales fringilla felis et finibus. Etiam porttitor purus risus, eget tincidunt felis auctor lacinia. Aliquam tempus egestas neque sed vulputate.</p>   
-                </div>
-            </div>
-        </div>        
-    </section>
-    <hr class="col-6 offset-3">
-    <section id="book_options">
-        <div class="container h-100">
-            <h2>Choose your edition!</h2>
-            <div class="row h-75"></div>
-            <div class="row h-25">
-                <div class="offset-1 col-10 my-auto">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit eget ligula eget cursus. Donec ac dignissim enim. Suspendisse et enim in lacus venenatis vulputate. In at risus at massa aliquam pretium. Nam sed nibh quis dolor porttitor pretium. Cras porttitor dui ex, id elementum lacus consectetur vitae. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur non tortor in eros vehicula varius gravida ac massa. Vestibulum vehicula semper tincidunt.
-
-                        Integer laoreet elementum euismod. In nunc quam, viverra nec augue non, hendrerit gravida diam. Nullam nibh sapien, mattis ut molestie in, cursus et dui. Phasellus iaculis semper lectus lacinia convallis. Nullam sodales fringilla felis et finibus. Etiam porttitor purus risus, eget tincidunt felis auctor lacinia. Aliquam tempus egestas neque sed vulputate.</p>   
-                </div>
-            </div>
+<section id="intro">
+    <div class="container h-100" id="intro-image">
+        <div class="row align-items-end justify-content-center">
+            <h2 class="offset-3 col-6">The SCP Archives</h2>
         </div>
-    </section>
-    <hr class="col-6 offset-3">
+        <div class="row align-items-end ">
+            <h6 class="offset-3 col-6 justify-content-center">The collaboratibe fenomenom of the SCP Foundation presented finally in stores</h6>
+        </div>
+    </div>
+</section>
+<hr class="col-6 offset-3">
+<section id="book_options">
     <div class="container h-100">
-        <div class="row h-100">
-            <div class="col-7 col-md-6 my-auto">
-                <h1 class="display-4 logo-font text-black">
-                    The new collections are here
-                </h1>
-                <div class="my-5">
-                    <h4>
-                        <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">All books</a>
-                    </h4>
-                </div>
+        <h3>The intrincate SCP universe like you have never seen before</h3>
+        <div class="row h-75"></div>
+        <div class="row h-25">
+            <div class="offset-1 col-10 my-auto">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit eget ligula eget cursus.
+                    Donec ac dignissim enim. Suspendisse et enim in lacus venenatis vulputate. In at risus at massa
+                    aliquam pretium. Nam sed nibh quis dolor porttitor pretium. Cras porttitor dui ex, id elementum
+                    lacus consectetur vitae. Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+                    ridiculus mus. Curabitur non tortor in eros vehicula varius gravida ac massa. Vestibulum vehicula
+                    semper tincidunt.
+
+                    Integer laoreet elementum euismod. In nunc quam, viverra nec augue non, hendrerit gravida diam.
+                    Nullam nibh sapien, mattis ut molestie in, cursus et dui. Phasellus iaculis semper lectus lacinia
+                    convallis. Nullam sodales fringilla felis et finibus. Etiam porttitor purus risus, eget tincidunt
+                    felis auctor lacinia. Aliquam tempus egestas neque sed vulputate.</p>
             </div>
         </div>
     </div>
+</section>
+<hr class="col-6 offset-3">
+<div class="container h-100">
+    <div class="row h-100">
+        <div class="col-7 col-md-6 my-auto">
+            <h1 class="display-4 logo-font text-black">
+                The new collections are here
+            </h1>
+            <div class="my-5">
+                <h4>
+                    <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">All
+                        books</a>
+                </h4>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
