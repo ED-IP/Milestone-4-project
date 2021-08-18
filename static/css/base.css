@@ -18,9 +18,12 @@ body {
 }
 
 #intro-image {
-    height: 400px;
     background-color: red;
     background: url('/media/Background_intro.jpg') no-repeat center center;
+}
+
+.intro-text {
+    padding-bottom: 5%;
 }
 
 /* css from Bulma */
