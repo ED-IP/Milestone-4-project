@@ -10,6 +10,12 @@ body {
     font-family: 'Lato'
 }
 
+/* custom css for the intro section */
+
+#intro {        
+    background-color: #dc3545;    
+}
+
 /* css from Bulma */
 .icon {
     align-items: center;
