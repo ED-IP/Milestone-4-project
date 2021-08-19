@@ -4,8 +4,8 @@ html {
 
 body {
     /* background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed; */
-    background-size: cover;
-    height: calc(100vh - 164px);
+    /* background-size: cover; */
+    /* height: calc(100vh - 164px); */    
     color: #555;
     font-family: 'Lato'
 }
@@ -285,7 +285,7 @@ input[name='q']::placeholder {
 }
 
 /* fix for mobile when the navbar is collapse */
-@media (min-width: 991px) {
+@media (max-width: 991px) {
     .header-container{
         padding-top: 116px;
     }
