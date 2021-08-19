@@ -22,10 +22,6 @@ body {
     background: url('/media/Background_intro.jpg') no-repeat center center;
 }
 
-.intro-text {
-    padding-bottom: 5%;
-}
-
 /* css from Bulma */
 .icon {
     align-items: center;
