@@ -31,3 +31,12 @@ def create_or_update_user_profile(sender, instance, created, **kwargs):
         UserProfile.objects.create(user=instance)
     # for existing user - save the profile
     instance.userprofile.save()
+
+
+# class ContactForm(models.Model):
+#     """ contact form model"""
+#     user = models.OneToOneField(User, on_delete=models.CASCADE)
+#     user_phone_number = models.CharField(max_length=20, null=True, blank=True)
+#     user_email = models.CharField(max_length=80, null=True, blank=True)
+#     description = models.TextField()
+#     user_id = models.CharField(max_length=40, null=True, blank=True)    
