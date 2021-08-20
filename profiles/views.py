@@ -52,6 +52,5 @@ def order_history(request, order_number):
     return render(request, template, context)
 
 
-
 def contact_form(request):
     return HttpResponse("Contact app works!")
