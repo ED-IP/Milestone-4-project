@@ -1,8 +1,8 @@
-from django.shortcuts import render, get_object_or_404, HttpResponse
+from django.shortcuts import render, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from .models import UserProfile, ContactForm
-from .forms import UserProfileForm
+from .models import UserProfile
+from .forms import UserProfileForm, UserContactForm
 
 from checkout.models import Order
 
@@ -53,6 +53,6 @@ def order_history(request, order_number):
 
 
 def contact_form(request):
-    form = ContactForm()
+    form = UserContactForm()
     context = {'form': form}
     return render(request, 'profiles/contact_form.html', context)

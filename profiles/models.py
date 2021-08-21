@@ -38,7 +38,7 @@ class ContactForm(models.Model):
     contact_user = models.CharField(max_length=20, null=True, blank=True)
     contact_user_id = models.CharField(max_length=20, null=True, blank=True)
     contact_user_email = models.EmailField()
-    conatact_user_phone_number = models.CharField(max_length=20, null=True, blank=True)
+    contact_user_phone_number = models.CharField(max_length=20, null=True, blank=True)
     description = models.TextField()
 
     def __str__(self):
