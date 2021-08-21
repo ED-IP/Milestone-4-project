@@ -35,4 +35,21 @@ class UserProfileForm(forms.ModelForm):
 class UserContactForm(forms.ModelForm):
     class Meta:
         model = ContactForm
-        fields = '__all__'
+        exclude = ('userid',)
+
+    # def __init__(self, *args, **kwargs):
+    #     """ Add place holders and classes, remove auto-generated labels and set autofocus on firest field"""
+
+    #     super().__init__(*args, **kwargs)
+    #     placeholders = {
+    #         'user': 'Username',
+    #         'user_email': 'Email',
+    #         'user_phone_number': 'Phone Numer',
+    #         'description': 'Please type your question here',
+    #     }
+
+    #     self.fields['user_phone_number'].widget.attrs['autofocus'] = True
+    #     for field in self.fields:
+    #         self.fields[field].widget.attrs['placeholder'] = placeholder
+    #         self.fields[field].widget.attrs['class'] = 'border-black rounded-0 profile-form-input'
+    #         self.fields[field].label = False

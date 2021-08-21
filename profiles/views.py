@@ -53,6 +53,18 @@ def order_history(request, order_number):
 
 
 def contact_form(request):
-    form = UserContactForm()
+    current_user = request.user
+
+    if request.method == 'POST':
+        form = UserContactForm(request.POST, instance=current_user)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Message successfuly sent')
+        else:
+            messages.error(request, 'Message failed. Please check the fields have the right data')
+    else:
+        form = UserContactForm(instance=current_user)
+
+    # form = UserContactForm()
     context = {'form': form}
     return render(request, 'profiles/contact_form.html', context)
