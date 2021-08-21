@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404, HttpResponse
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from .models import UserProfile
+from .models import UserProfile, ContactForm
 from .forms import UserProfileForm
 
 from checkout.models import Order
@@ -53,4 +53,7 @@ def order_history(request, order_number):
 
 
 def contact_form(request):
-    return HttpResponse("Contact app works!")
+    form = ContactForm()
+    context = {'form': form}
+    return render(request, 'contact_form.html', context)
+    # return HttpResponse("Contact app works!")

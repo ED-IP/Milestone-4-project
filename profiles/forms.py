@@ -1,5 +1,5 @@
 from django import forms
-from .models import UserProfile
+from .models import UserProfile, ContactForm
 
 
 class UserProfileForm(forms.ModelForm):
@@ -30,3 +30,9 @@ class UserProfileForm(forms.ModelForm):
             self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].widget.attrs['class'] = 'border-black rounded-0 profile-form-input'
             self.fields[field].label = False
+
+
+class UserContactForm(forms.ModelForm):
+    class Meta:
+        model = ContactForm
+        fields = '__all__'
