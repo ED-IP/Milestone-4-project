@@ -64,7 +64,8 @@ def contact_form(request):
             messages.error(request, 'Message failed. Please check the fields have the right data')
     else:
         form = UserContactForm(instance=current_user)
+        context = {'form': form}
 
     # form = UserContactForm()
-    context = {'form': form}
+    # context = {'form': form}
     return render(request, 'profiles/contact_form.html', context)
