@@ -54,6 +54,7 @@ def order_history(request, order_number):
 
 def contact_form(request):
     current_user = request.user
+    form = UserContactForm(instance=current_user)
 
     if request.method == 'POST':
         form = UserContactForm(request.POST, instance=current_user)
@@ -63,7 +64,6 @@ def contact_form(request):
         else:
             messages.error(request, 'Message failed. Please check the fields have the right data')
     else:
-        form = UserContactForm(instance=current_user)
         context = {'form': form}
 
     # form = UserContactForm()
