@@ -55,5 +55,4 @@ def order_history(request, order_number):
 def contact_form(request):
     form = ContactForm()
     context = {'form': form}
-    return render(request, 'contact_form.html', context)
-    # return HttpResponse("Contact app works!")
+    return render(request, 'profiles/contact_form.html', context)
