@@ -29,7 +29,7 @@ body {
 
 #intro-image-3 {
     background-color: red;
-    background: url('/media/Background_intro.jpg') no-repeat center center;
+    background: url('/media/Background_intro_3.jpg') no-repeat center center;
 }
 
 /*-------------  slideshow code --------------- */
@@ -48,9 +48,9 @@ body {
 /* Fading animation */
 .fade {
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 2s;
+    -webkit-animation-duration: 1s;
     animation-name: fade;
-    animation-duration: 2s;
+    animation-duration: 1s;
 }
   
 @-webkit-keyframes fade {
