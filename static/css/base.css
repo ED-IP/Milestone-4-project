@@ -32,13 +32,13 @@ body {
     background: url('/media/Background_intro.jpg') no-repeat center center;
 }
 
-/* slideshow code */
+/*-------------  slideshow code --------------- */
 
 /* Slideshow container */
-.slideshow-container {
+/* .slideshow-container {
     position: relative;
     margin: auto;
-}
+} */
   
 /* Hide the slideshow images by default */
 .mySlide {
@@ -48,9 +48,9 @@ body {
 /* Fading animation */
 .fade {
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 2.5s;
+    -webkit-animation-duration: 2s;
     animation-name: fade;
-    animation-duration: 2.5s;
+    animation-duration: 2s;
 }
   
 @-webkit-keyframes fade {
