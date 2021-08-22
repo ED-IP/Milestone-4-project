@@ -90,13 +90,14 @@ Also there will be information about future publications.
 
 ## Credits
 
-- Information about the SCP universe was found in the [SCP Wiki](https://scp-wiki.wikidot.com/)
-
 ### Code
+
+- Tutorial about SlideShows, feautured in the home page(https://www.w3schools.com/howto/howto_js_slideshow.asp)
 
 
 ### Content
 
+- Information about the SCP universe was found in the [SCP Wiki](https://scp-wiki.wikidot.com/)
 
 ### Media
 

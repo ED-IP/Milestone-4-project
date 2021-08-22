@@ -17,9 +17,50 @@ body {
     color: white;
 }
 
-#intro-image {
+#intro-image-1 {
     background-color: red;
     background: url('/media/Background_intro.jpg') no-repeat center center;
+}
+
+#intro-image-2 {
+    background-color: red;
+    background: url('/media/Background_intro_2.jpg') no-repeat center center;
+}
+
+#intro-image-3 {
+    background-color: red;
+    background: url('/media/Background_intro.jpg') no-repeat center center;
+}
+
+/* slideshow code */
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    margin: auto;
+}
+  
+/* Hide the slideshow images by default */
+.mySlide {
+    display: none;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
 }
 
 /* css from Bulma */
