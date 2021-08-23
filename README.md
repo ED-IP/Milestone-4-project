@@ -42,6 +42,9 @@ Also there will be information about future publications.
 - **[HTML]**
 	- **HTML** is used to create the structure of the web-page.
 
+- **[JS]**
+    - **JavaScript**
+
 - **[Bootstrap](https://getbootstrap.com/)**
     - **Bootstrap** is used to provide css style and some JavaScript content.
 
