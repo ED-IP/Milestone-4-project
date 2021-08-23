@@ -45,6 +45,9 @@ Also there will be information about future publications.
 - **[Bootstrap](https://getbootstrap.com/)**
     - **Bootstrap** is used to provide css style and some JavaScript content.
 
+- **[Font Awesome](https://fontawesome.com/)**
+	- The website use several symbols from **Font Awesome** service.
+
 
 ### Frameworks, Libraries & Programs Used
 
@@ -101,5 +104,23 @@ Also there will be information about future publications.
 
 ### Media
 
+- Control Videogame Wallpapers (Used in the intro section):
+    (https://wall.alphacoders.com/big.php?i=1079669/)
+    (https://wall.alphacoders.com/big.php?i=1037069)
+
+
+- [Man Wearing Black Vest Near Crowded People](https://www.pexels.com/photo/man-wearing-black-vest-near-crowded-people-2348817/) by Aloïs Moubax
+
+- [Empty white book on wooden table](https://www.pexels.com/photo/empty-white-book-on-wooden-table-6373289/) by Monstera, used as template for the book images in product section
 
 ### Acknowledgements
+
+The following discussions/articles/tutorials were consulted to solve issues or add featured to the project during the development
+
+- https://www.w3schools.com/howto/howto_js_slideshow.asp
+- https://www.twilio.com/blog/build-contact-form-python-django-twilio-sendgrid
+- https://learndjango.com/tutorials/django-email-contact-form
+- https://getbootstrap.com/docs/4.0/utilities/spacing/
+- https://getbootstrap.com/docs/4.0/utilities/text/#text-alignment
+- https://getbootstrap.com/docs/4.0/layout/grid/#horizontal-alignment
+- https://stackoverflow.com/questions/12615154/how-to-get-the-currently-logged-in-users-user-id-in-django
