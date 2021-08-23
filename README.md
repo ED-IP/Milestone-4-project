@@ -37,7 +37,7 @@ Also there will be information about future publications.
 
 ## Technologies Used
 
-### Languages Used
+### Languages
 
 - **[HTML]**
 	- **HTML** is used to create the structure of the web-page.
@@ -49,7 +49,7 @@ Also there will be information about future publications.
 	- The website use several symbols from **Font Awesome** service.
 
 
-### Frameworks, Libraries & Programs Used
+### Frameworks, Libraries & Programs
 
 - **[Django](https://www.djangoproject.com/)**
 
@@ -112,6 +112,10 @@ Also there will be information about future publications.
 - [Man Wearing Black Vest Near Crowded People](https://www.pexels.com/photo/man-wearing-black-vest-near-crowded-people-2348817/) by Aloïs Moubax
 
 - [Empty white book on wooden table](https://www.pexels.com/photo/empty-white-book-on-wooden-table-6373289/) by Monstera, used as template for the book images in product section
+
+- S.C.P. Foundation Logo from [Wikipedia](https://en.wikipedia.org/wiki/SCP_Foundation#/media/File:SCP_Foundation_(emblem).svg)
+
+- G.O.C. Logo from [SCP Foundation Wiki](https://scp-wiki.wikidot.com/goc-hub-page)
 
 ### Acknowledgements
 
