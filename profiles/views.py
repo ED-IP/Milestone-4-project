@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from .models import UserProfile
+from .models import UserProfile, ContactForm
 from .forms import UserProfileForm, UserContactForm
 
 from checkout.models import Order
@@ -54,17 +54,29 @@ def order_history(request, order_number):
 
 def contact_form(request):
     current_user = get_object_or_404(UserProfile, user=request.user)
-    form = UserContactForm(instance=current_user)
 
     if request.method == 'POST':
         form = UserContactForm(request.POST, instance=current_user)
+        form_data = {
+            'user_email': request.POST['user_email'],
+            'user_phone_number': request.POST['user_phone_number'],
+            'description': request.POST['description'],
+        }
+        form = UserContactForm(form_data)
         if form.is_valid():
-            print(form)
+            # form.save(commit=False)
+            # pepito2 = form.save(commit=False)
+            # print(pepito2)
+            # form.user = current_user
             form.save()
+            # print(pepito)
             messages.success(request, 'Message successfuly sent')
         else:
             messages.error(request, 'Message failed. Please check the fields have the right data')
+    else:
+        form = UserContactForm(instance=current_user)
 
-    # form = UserContactForm()
+    template = 'profiles/contact_form.html'
+
     context = {'form': form}
-    return render(request, 'profiles/contact_form.html', context)
+    return render(request, template, context)

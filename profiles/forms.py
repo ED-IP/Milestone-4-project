@@ -35,4 +35,8 @@ class UserProfileForm(forms.ModelForm):
 class UserContactForm(forms.ModelForm):
     class Meta:
         model = ContactForm
-        exclude = ('user',)
+        fields = [
+            'user_email',
+            'user_phone_number',
+            'description'
+        ]

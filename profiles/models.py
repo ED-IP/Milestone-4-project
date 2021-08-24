@@ -35,10 +35,12 @@ def create_or_update_user_profile(sender, instance, created, **kwargs):
 
 class ContactForm(models.Model):
     """ contact form model"""
+    # user = models.ForeignKey(UserProfile, on_delete=models.SET_NULL,
+    #                                  null=True, blank=True)
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     user_email = models.EmailField()
     user_phone_number = models.CharField(max_length=20, null=True, blank=True)
     description = models.TextField()
 
     def __str__(self):
-        return self.user.username
+        return self.user_email
