@@ -6,7 +6,7 @@ from .models import ContactForm
 
 class ContactFormAdmin(admin.ModelAdmin):
 
-    fields = ('user', 'user_email', 'user_phone_number', 'description',)
+    fields = ('user_username', 'user_email', 'user_phone_number', 'description',)
 
 
 admin.site.register(ContactForm, ContactFormAdmin)

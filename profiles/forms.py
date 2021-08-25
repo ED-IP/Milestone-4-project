@@ -36,7 +36,8 @@ class UserContactForm(forms.ModelForm):
     class Meta:
         model = ContactForm
         fields = [
+            'user_username',
             'user_email',
             'user_phone_number',
-            'description'
+            'description',
         ]
