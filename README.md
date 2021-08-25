@@ -85,7 +85,8 @@ Also there will be information about future publications.
 
 ### Known Bugs
 
-- Sometimes is not posible to click in the options for the dropdown menu "My account" when a logged user is in the home page (I suspect is because a toast is an "invisible" on top of the menu option)
+- ~~Sometimes is not posible to click in the options for the dropdown menu "My account" when a logged user is in the home page (I suspect is because a toast is an "invisible" on top of the menu option)~~
+- Sorting by name not working
 
 ## Deployment
 
