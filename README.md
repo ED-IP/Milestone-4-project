@@ -130,3 +130,4 @@ The following discussions/articles/tutorials were consulted to solve issues or a
 - https://getbootstrap.com/docs/4.0/utilities/text/#text-alignment
 - https://getbootstrap.com/docs/4.0/layout/grid/#horizontal-alignment
 - https://stackoverflow.com/questions/12615154/how-to-get-the-currently-logged-in-users-user-id-in-django
+- https://www.youtube.com/watch?v=CVEKe39VFu8
