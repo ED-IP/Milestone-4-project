@@ -58,6 +58,7 @@ def contact_form(request):
     if request.method == 'POST':
         form = UserContactForm(request.POST, instance=current_user)
         form_data = {
+            'user': request.POST[current_user],
             'user_email': request.POST['user_email'],
             'user_phone_number': request.POST['user_phone_number'],
             'description': request.POST['description'],
