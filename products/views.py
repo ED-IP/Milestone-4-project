@@ -143,13 +143,13 @@ def delete_product(request, product_id):
 @login_required
 def add_to_whislist(request, product_id):
     """ add a product to the whislist """
-    user = request.user
+    user = get_object_or_404(User, pk=request.user)
     product = get_object_or_404(Product, pk=product_id)
     if request.method == 'POST':
-        form = {
+        form = [
             'user_profile': user,
             'product': product,
-            }
+        ]
         if form.is_valid():
             form.save()
             messages.success(request, 'Product added to your whislist!')            
