@@ -143,21 +143,24 @@ def delete_product(request, product_id):
 @login_required
 def add_to_whislist(request, product_id):
     """ add a product to the whislist """
+    user = request.user
     product = get_object_or_404(Product, pk=product_id)
     if request.method == 'POST':
-        form = WhisListForm(request.POST, request.FILES)
+        form = {
+            'user_profile': user,
+            'product': product,
+            }
         if form.is_valid():
-            product = form.save()
-            messages.success(request, 'Product added to your whislist!')
-            return redirect(reverse('product_detail', args=['product.id']))
+            form.save()
+            messages.success(request, 'Product added to your whislist!')            
         else:
             messages.error(request, 'Is not possible to add this product to your whislist')
-    else:
-        form = ProductForm()
+    # else:
+    #     form = ProductForm()
 
-    template = 'products/add_product.html'
-    context = {
-        'form': form,
-    }
+    # template = 'products/add_product.html'
+    # context = {
+    #     'form': form,
+    # }
 
-    return render(request, template, context)
+    # return render(request, template, context)

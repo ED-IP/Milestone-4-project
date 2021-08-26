@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Product  # Category
+from .models import Product, WhisList  # Category
 
 # Register your models here.
 
@@ -8,7 +8,6 @@ class ProductAdmin(admin.ModelAdmin):
     list_display = (
         # 'sku',
         'title',
-        # 'category',
         'price',
         # 'rating',
         'image',
@@ -24,5 +23,13 @@ class CategoryAdmin(admin.ModelAdmin):
     )
 
 
+class WhisListAdmin(admin.ModelAdmin):
+    list_display = (
+        'user_profile',
+        'product',
+    )
+
+
 admin.site.register(Product, ProductAdmin)
+admin.site.register(WhisList, WhisListAdmin)
 # admin.site.register(Category, CategoryAdmin)
