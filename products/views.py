@@ -5,7 +5,7 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 
 from .models import Product  # Category
-from .forms import ProductForm
+from .forms import ProductForm, WhisListForm
 
 # Create your views here.
 
@@ -138,3 +138,26 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
+
+@login_required
+def add_to_whislist(request, product_id):
+    """ add a product to the whislist """
+    product = get_object_or_404(Product, pk=product_id)
+    if request.method == 'POST':
+        form = WhisListForm(request.POST, request.FILES)
+        if form.is_valid():
+            product = form.save()
+            messages.success(request, 'Product added to your whislist!')
+            return redirect(reverse('product_detail', args=['product.id']))
+        else:
+            messages.error(request, 'Is not possible to add this product to your whislist')
+    else:
+        form = ProductForm()
+
+    template = 'products/add_product.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
