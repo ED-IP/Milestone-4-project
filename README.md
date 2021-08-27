@@ -100,6 +100,10 @@ Also there will be information about future publications.
 ### Code
 
 - Tutorial about SlideShows, feautured in the home page(https://www.w3schools.com/howto/howto_js_slideshow.asp)
+- Tutorials about the use of [Whitenoise](http://whitenoise.evans.io/en/stable/index.html) to serve static files with heroku
+    - https://devcenter.heroku.com/articles/django-assets
+    - https://dev.to/developerroad/tutorial-deploying-a-django-app-on-heroku-4k6o
+    - http://whitenoise.evans.io/en/stable/django.html#
 
 ### Content
 
