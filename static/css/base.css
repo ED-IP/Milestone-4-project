@@ -18,15 +18,15 @@ body {
 }
 
 /* #intro-image-1 {    
-    background: url('/media/Background_intro.jpg') no-repeat center center;
-} */
+    background: url('/img/Background_intro.jpg') no-repeat center center;
+}
 
-/* #intro-image-2 {    
-    background: no-repeat center center;
-} */
+#intro-image-2 {    
+    background: url('/img/Background_intro.jpg_2') no-repeat center center;
+}
 
-/* #intro-image-3 {   
-    background: url('/media/Background_intro_3.jpg') no-repeat center center;
+#intro-image-3 {   
+    background: url('/img/Background_intro_3.jpg') no-repeat center center;
 } */
 
 /*-------------  slideshow code --------------- */
