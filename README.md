@@ -35,6 +35,24 @@ Also there will be information about future publications.
     
 ## Features
 
+### Existing Features
+
+__Register User page__
+
+    - In this section of the web an anonymous user can register to be able to do purchases
+    - The user have to provide a username, e-mail and a password
+    
+- __Log In page__
+
+    - In the Log In area the user have to provide a valid (already registered) Username and Password    
+    - There is a link to the Register page in case that the user wants to register.
+
+- __User Profile__
+
+       
+- __Update User Information__
+
+    
 ## Technologies Used
 
 ### Languages
@@ -57,6 +75,8 @@ Also there will be information about future publications.
 - **[Django](https://www.djangoproject.com/)**
 
 - **[Stripe](https://stripe.com/)**
+
+- **[Whitenoise](http://whitenoise.evans.io/en/stable/index.html)** Used to serve static files in Heroku
 	
 
 ## Testing
@@ -88,12 +108,55 @@ Also there will be information about future publications.
 - ~~Sometimes is not posible to click in the options for the dropdown menu "My account" when a logged user is in the home page (I suspect is because a toast is an "invisible" on top of the menu option)~~
 - Sorting by name not working
 - Error 500 in heroku deployed app
+- Images are not working once the project is deployed to Heroku, I suspect is a problem with the paths and the configuration for Whitenoise
 
 ## Deployment
 
 ### GitHub Pages
 
 ### Heroku
+
+These are the steps followed to deploy the proyect on Heroku
+
+1. Create a requierements.txt, in Gitpod terminal:
+    - pip3 freeze --local > requirements.txt
+    
+2. Create a Procfile, in Gitpod terminal:
+    - echo web: python app.py > Procfile
+    - open the Procfile and check that there is no trailing lines after the text
+
+3. Add and push the files to GitHub:
+    - git add requirements.txt
+    - git add Procfile
+    - git commit -m ""
+    - git push
+
+4. On the Heroku Dashboard click in the New button and choose "New App"
+
+5. Choose a name and a region (for this project I used Europe) and click create
+
+6. Once the app is created click on the settings tab, and then click on "Reveal config Vars" button.
+    - Add the following key, values pairs
+        
+        KEY | VALUES
+        --------------|--------------
+        IP | 0.0.0.0
+        MONGO_DBNAME| name of the database
+        MONGO_URI| mongodb+srv://user:passworduser@namecluster.8pkrb.mongodb.net/collection?retryWrites=true&w=majority
+        PORT| 5000
+        SECRET_KEY    |
+    
+    - Note: The values used in the project are not present here as they include passwords and user
+
+7. Go to the Deployment tab and in the Deployment Method section choose GitHub
+    - In the connect to GitHub choose the correct repository and click connect
+        
+8. In the section Manual Deploys choose the branch to deploy (for this project was "main") and click Deploy Branch
+    - As a side note I used Manual Deploys over Automatic to avoid reaching the Heroku limit.
+
+9. After the building phase it should be deployed. You can open the app by clicking on the "View" button under Manual Deploys or on the Open App button at the top of the page
+
+10. The project is deployed at the following address:
 
 
 ## Credits
