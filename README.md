@@ -142,11 +142,8 @@ These are the steps followed to deploy the proyect on Heroku
         
         KEY | VALUES
         --------------|--------------
-        IP | 0.0.0.0
-        MONGO_DBNAME| name of the database
-        MONGO_URI| mongodb+srv://user:passworduser@namecluster.8pkrb.mongodb.net/collection?retryWrites=true&w=majority
-        PORT| 5000
-        SECRET_KEY    |
+        Key | placeholder
+        
     
     - Note: The values used in the project are not present here as they include passwords and user
 
