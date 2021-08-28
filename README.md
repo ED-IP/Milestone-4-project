@@ -135,7 +135,9 @@ These are the steps followed to deploy the proyect on Heroku
 
 5. Choose a name and a region (for this project I used Europe) and click create
 
-6. Once the app is created click on the settings tab, and then click on "Reveal config Vars" button.
+6. In the Resources tab add the Heroku Postgres addon
+
+7. Once the app is created click on the settings tab, and then click on "Reveal config Vars" button.
     - Add the following key, values pairs
         
         KEY | VALUES
@@ -148,15 +150,15 @@ These are the steps followed to deploy the proyect on Heroku
     
     - Note: The values used in the project are not present here as they include passwords and user
 
-7. Go to the Deployment tab and in the Deployment Method section choose GitHub
+8. Go to the Deployment tab and in the Deployment Method section choose GitHub
     - In the connect to GitHub choose the correct repository and click connect
         
-8. In the section Manual Deploys choose the branch to deploy (for this project was "main") and click Deploy Branch
+9. In the section Manual Deploys choose the branch to deploy (for this project was "main") and click Deploy Branch
     - As a side note I used Manual Deploys over Automatic to avoid reaching the Heroku limit.
 
-9. After the building phase it should be deployed. You can open the app by clicking on the "View" button under Manual Deploys or on the Open App button at the top of the page
+10. After the building phase it should be deployed. You can open the app by clicking on the "View" button under Manual Deploys or on the Open App button at the top of the page
 
-10. The project is deployed at the following address:
+11. The project is deployed at the following address:
 
 
 ## Credits
