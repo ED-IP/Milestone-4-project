@@ -38,8 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'cloudinary_storage',
     'django.contrib.staticfiles',
     'django.contrib.sites',
+    'cloudinary',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
@@ -184,6 +186,15 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
     ]
+
+# Cloudionary
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'YOUR_CLOUD_NAME',
+    'API_KEY': 'YOUR_API_KEY',
+    'API_SECRET': 'YOUR_API_SECRET',
+}
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 
 # Stripe
