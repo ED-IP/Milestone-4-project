@@ -6,14 +6,10 @@ from .models import Product, WhisList  # Category
 
 class ProductAdmin(admin.ModelAdmin):
     list_display = (
-        # 'sku',
         'title',
         'price',
-        # 'rating',
         'image',
     )
-
-    # ordening = ('sku',)
 
 
 class CategoryAdmin(admin.ModelAdmin):
@@ -32,4 +28,3 @@ class WhisListAdmin(admin.ModelAdmin):
 
 admin.site.register(Product, ProductAdmin)
 admin.site.register(WhisList, WhisListAdmin)
-# admin.site.register(Category, CategoryAdmin)
