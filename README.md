@@ -134,6 +134,7 @@ Also there will be information about future publications.
 ### To do
 
 - Change the typografy for the main heading in the Introduction section
+- Add a link to Register user in the Login user section
 
 
 ## Deployment
