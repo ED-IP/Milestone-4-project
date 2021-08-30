@@ -13,11 +13,14 @@ Also there will be information about future publications.
         1. As a User, I want to be able to buy book
         2. As a User, I want to the book to be send to the address I indicate
         3. As a User, I want to be able to have a history of my purchase
+        4. As a user, I want to be able to update my address and other
+        5. As a User, I want to be able to contact with the staff/owner of the site
 	
     -   #### Owner
 
         1. As the Owner, I want that only registered user can buy using the page
         2. As the Owner, I want the user to be able to maintain up to date information for their shipments
+        3. As the Owner, I want the user to be able to update their information        
 
 
 -   ### Design
@@ -28,14 +31,17 @@ Also there will be information about future publications.
     -   #### Typography
         -   
     -   #### Imagery
-        -   
+        -   The kind of images I want for the site are those related to the nature of the SCP universe, supernatural themes, conspirations etc...
 
 *   ### Wireframes
-
     
 ## Features
 
 ### Existing Features
+
+- __Navigation Menu__
+
+    - Responsive Navigation menu
 
 - __Register User page__
 
@@ -47,25 +53,24 @@ Also there will be information about future publications.
     - In the Log In area the user have to provide a valid (already registered) Username and Password
     - Link to recover password    
     
-
 - __User Profile__
 
     - Previous orders history
     - Possibility of update user details
-
+    - Contact form to ask question to site staff
        
 - __Product Detail__
 
-    - It's possible to add to bag the product
+    - It's possible to add the product to the bag
+    - A button to return to main store
     - Open the image of the product in a dedicated tab
-
 
 
 ### Features to add
 
 - __Log In page__
 
-    - There is a link to the Register page in case that the user wants to register.
+    - A link to the Register page in case that the user wants to register.
 
 - __Product Detail__
 
@@ -136,6 +141,7 @@ Also there will be information about future publications.
 - Change the typography for the main heading in the Introduction section
 - Add a link to Register user in the Login user section
 - Adjust the animation for the SlideShow in the intro section
+- Rremove the "Home" option from the mobile navigation menu
 
 
 ## Deployment
