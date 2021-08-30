@@ -177,7 +177,8 @@ These are the steps followed to deploy the proyect on Heroku
         STRIPE_SECRET_KEY | your stripe secret_key
         STRIPE_WH_SECRET | your strike webhook_key
         USE_AWS | True
-        DATABASE_URL | This field should be created automatically by heroku when you install the Postgress addon
+        DATABASE_URL | This field should be created automatically by Heroku when you install the Postgress addon
+        DISABLE_COLLECTSTATIC | 1
         
     
     - Note: The values used in the project are not present here as they include passwords and user
@@ -189,6 +190,10 @@ These are the steps followed to deploy the proyect on Heroku
     - As a side note I used Manual Deploys over Automatic to avoid reaching the Heroku limit.
 
 10. After the building phase it should be deployed. You can open the app by clicking on the "View" button under Manual Deploys or on the Open App button at the top of the page
+
+11. Remove "DISABLE_COLLECTSTATIC" from your Config Vars
+
+12. Deploy again the project, it should connect to Amazon web services and copy the static files to your bucket
 
 11. The project is deployed at the following address:
 
