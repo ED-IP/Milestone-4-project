@@ -135,6 +135,7 @@ Also there will be information about future publications.
 
 - Change the typografy for the main heading in the Introduction section
 - Add a link to Register user in the Login user section
+- Adjust the animation for the SlideShow in the intro section
 
 
 ## Deployment
