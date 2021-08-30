@@ -40,7 +40,7 @@ Also there will be information about future publications.
 - __Register User page__
 
     - In this section of the web an anonymous user can register to be able to do purchases
-    - The user have to provide a username, e-mail and a password
+    - The user have to provide an username, e-mail and a password
     
 - __Log In page__
 
@@ -108,32 +108,32 @@ Also there will be information about future publications.
 -   #### Owner Goals
 
     
-### Further Testing (not tested yet)
+### Further Testing
 
 - [W3C Validation tools](https://validator.w3.org/)
    - All the HTML files were tested with the W3C validator, some html errors were found and fixed.
    - Still there are errors that I think are related to the Jinja templates
 
 - [CSS Validator](https://jigsaw.w3.org/css-validator/)
-   - Style.css was tested with the css validator, no error was found
+   - Base.css was tested with the css validator, no error was found
 
 - [JSHint](https://jshint.com/)
-   - script.js was tested with JSHint no warnings were given
+   - slideShow.js was tested with JSHint a warning in line 11 is noticed, consulting the code with the one in W3School doesn't suggest anything wrong
 
 
 ### Known Bugs
 
 - ~~Images are not working once the project is deployed to Heroku, I suspect is a problem with the paths and the configuration for Whitenoise~~
-- ~~Sometimes is not posible to click in the options for the dropdown menu "My account" when a logged user is in the home page (I suspect is because a toast is an "invisible" on top of the menu option)~~
+- ~~Sometimes is not possible to click in the options for the drop-down menu "My account" when a logged user is in the home page (I suspect is because a toast is an "invisible" on top of the menu option)~~
 - Sorting by name not working
-- Stripe Webhooks not working on Heroku (500 error is visible in stripe website)
+- Stripe Webhooks not working on Heroku (error 500 is visible in stripe website)
 - "Order Total" doesn't appear in order history
-- Navigation option to the Introduction section need adjustment
+- Navigation options for the home page need adjustment, specially for the mobile site
 - Wishlist function not finalized
 
 ### To do
 
-- Change the typografy for the main heading in the Introduction section
+- Change the typography for the main heading in the Introduction section
 - Add a link to Register user in the Login user section
 - Adjust the animation for the SlideShow in the intro section
 
@@ -144,9 +144,9 @@ Also there will be information about future publications.
 
 ### Heroku
 
-These are the steps followed to deploy the proyect on Heroku
+These are the steps followed to deploy the project on Heroku
 
-1. Create a requierements.txt, in Gitpod terminal:
+1. Create a requirements.txt, in Gitpod terminal:
     - pip3 freeze --local > requirements.txt
     
 2. Create a Procfile, in Gitpod terminal:
@@ -163,7 +163,7 @@ These are the steps followed to deploy the proyect on Heroku
 
 5. Choose a name and a region (for this project I used Europe) and click create
 
-6. In the Resources tab add the Heroku Postgres addon
+6. In the Resources tab add the Heroku Postgres add-on
 
 7. Once the app is created click on the settings tab, and then click on "Reveal config Vars" button.
     - Add the following key, values pairs
@@ -177,7 +177,7 @@ These are the steps followed to deploy the proyect on Heroku
         STRIPE_SECRET_KEY | your stripe secret_key
         STRIPE_WH_SECRET | your strike webhook_key
         USE_AWS | True
-        DATABASE_URL | This field should be created automatically by Heroku when you install the Postgress addon
+        DATABASE_URL | This field should be created automatically by Heroku when you install the Postgress add-on
         DISABLE_COLLECTSTATIC | 1
         
     
@@ -202,8 +202,8 @@ These are the steps followed to deploy the proyect on Heroku
 
 ### Code
 
-- Tutorial about SlideShows, feautured in the home page(https://www.w3schools.com/howto/howto_js_slideshow.asp)
-- Tutorials about the use of [Whitenoise](http://whitenoise.evans.io/en/stable/index.html) to serve static files with heroku
+- Tutorial about SlideShows, featured in the home page(https://www.w3schools.com/howto/howto_js_slideshow.asp)
+- Tutorials about the use of [Whitenoise](http://whitenoise.evans.io/en/stable/index.html) to serve static files with Heroku
     - https://devcenter.heroku.com/articles/django-assets
     - https://dev.to/developerroad/tutorial-deploying-a-django-app-on-heroku-4k6o
     - http://whitenoise.evans.io/en/stable/django.html#
