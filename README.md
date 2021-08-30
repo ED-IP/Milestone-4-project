@@ -37,21 +37,39 @@ Also there will be information about future publications.
 
 ### Existing Features
 
-__Register User page__
+- __Register User page__
 
     - In this section of the web an anonymous user can register to be able to do purchases
     - The user have to provide a username, e-mail and a password
     
 - __Log In page__
 
-    - In the Log In area the user have to provide a valid (already registered) Username and Password    
-    - There is a link to the Register page in case that the user wants to register.
+    - In the Log In area the user have to provide a valid (already registered) Username and Password
+    - Link to recover password    
+    
 
 - __User Profile__
 
-       
-- __Update User Information__
+    - Previous orders history
+    - Possibility of update user details
 
+       
+- __Product Detail__
+
+    - It's possible to add to bag the product
+    - Open the image of the product in a dedicated tab
+
+
+
+### Features to add
+
+- __Log In page__
+
+    - There is a link to the Register page in case that the user wants to register.
+
+- __Product Detail__
+
+    - Functional Wishlist
     
 ## Technologies Used
 
@@ -105,11 +123,18 @@ __Register User page__
 
 ### Known Bugs
 
+- ~~Images are not working once the project is deployed to Heroku, I suspect is a problem with the paths and the configuration for Whitenoise~~
 - ~~Sometimes is not posible to click in the options for the dropdown menu "My account" when a logged user is in the home page (I suspect is because a toast is an "invisible" on top of the menu option)~~
 - Sorting by name not working
-- Stripe Webhooks not working on Heroku
-- Order Total doesn't appear in order history for the user
-- ~~Images are not working once the project is deployed to Heroku, I suspect is a problem with the paths and the configuration for Whitenoise~~
+- Stripe Webhooks not working on Heroku (500 error is visible in stripe website)
+- "Order Total" doesn't appear in order history
+- Navigation option to the Introduction section need adjustment
+- Wishlist function not finalized
+
+### To do
+
+- Change the typografy for the main heading in the Introduction section
+
 
 ## Deployment
 
