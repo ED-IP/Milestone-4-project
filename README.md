@@ -170,7 +170,14 @@ These are the steps followed to deploy the proyect on Heroku
         
         KEY | VALUES
         --------------|--------------
-        Key | placeholder
+        AWS_ACCESS_KEY_ID | your aws_access key
+        AWS_SECRET_ACCESS_KEY | your aws_secret_key
+        SECRET_KEY | your django secret_key
+        STRIPE_PUBLIC_KEY | your stripe public_key
+        STRIPE_SECRET_KEY | your stripe secret_key
+        STRIPE_WH_SECRET | your strike webhook_key
+        USE_AWS | True
+        DATABASE_URL | This field should be created automatically by heroku when you install the Postgress addon
         
     
     - Note: The values used in the project are not present here as they include passwords and user
