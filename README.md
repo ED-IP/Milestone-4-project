@@ -76,7 +76,7 @@ __Register User page__
 
 - **[Stripe](https://stripe.com/)**
 
-- **[Whitenoise](http://whitenoise.evans.io/en/stable/index.html)** Used to serve static files in Heroku
+- ~~**[Whitenoise](http://whitenoise.evans.io/en/stable/index.html)** not in use anymore~~
 	
 
 ## Testing
@@ -107,8 +107,9 @@ __Register User page__
 
 - ~~Sometimes is not posible to click in the options for the dropdown menu "My account" when a logged user is in the home page (I suspect is because a toast is an "invisible" on top of the menu option)~~
 - Sorting by name not working
-- Error 500 in heroku deployed app
-- Images are not working once the project is deployed to Heroku, I suspect is a problem with the paths and the configuration for Whitenoise
+- Stripe Webhooks not working on Heroku
+- Order Total doesn't appear in order history for the user
+- ~~Images are not working once the project is deployed to Heroku, I suspect is a problem with the paths and the configuration for Whitenoise~~
 
 ## Deployment
 
