@@ -105,7 +105,7 @@ The home page include a short introduction to the current release products, the 
 
 ### Testing User Stories from User Experience (UX) Section
 
-The follwing test have been done on a Windows machine with the following browser:
+The following test have been done on a Windows machine with the following browser:
 - Brave Browser Version 1.28.106 Chromium: 92.0.4515.159 (Official Build) (64-bit) Windows
 - Firefox 91.0.2 (64-bit) Windows
 
@@ -131,7 +131,7 @@ The mobile version of the web has been tested with the developers tools for the 
         - Test User stories number 4 proves that the users can update their information if it's needed.
 
     2. As the Owner, I want the user to be able to register in the website:
-        - Tested creating several test user, seems that the user in correctly registred.
+        - Tested creating several test user, seems that the user is correctly registered.
 
     
 ### Further Testing
@@ -153,7 +153,7 @@ The mobile version of the web has been tested with the developers tools for the 
 - ~~Sometimes is not possible to click in the options for the drop-down menu "My account" when a logged user is in the home page (I suspect is because a toast is an "invisible" on top of the menu option)~~
 - Sorting by name not working
 - Stripe Webhooks not working on Heroku (error 500 is visible in stripe website)
-- "Order Total" doesn't appear in order history, it's not correctly recorded in the orders table
+- "Order Total" doesn't appear in order history, it's not correctly recorded in the orders table for some orders
 - Navigation options for the home page need adjustment, specially for the mobile site
 - Wishlist function not finalized
 - It's not possible to click the logout/login, the inspect tools shows the body element on top of some of the buttons, fields not allowing interaction
@@ -228,9 +228,16 @@ These are the steps followed to deploy the project on Heroku
 
 ### Special thanks
 
+I would like to start by especially thanking my mentor and my brother for the extra time and patience they had trying to help me with this project.
+
+Without their help I would not have been able to have reached this point in the project.
+
+I also want to thank the tutors for their support to solve the problems that I have been encountering while trying to finish this.
+
 
 ### Code
 
+- This project uses some of the code from the boutique-ado mini project from the course
 - Tutorial about SlideShows, featured in the home page(https://www.w3schools.com/howto/howto_js_slideshow.asp)
 - Tutorials about the use of [Whitenoise](http://whitenoise.evans.io/en/stable/index.html) to serve static files with Heroku
     - https://devcenter.heroku.com/articles/django-assets
