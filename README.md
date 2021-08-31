@@ -3,45 +3,13 @@
 The objective of this page is to promote a new book series based on the [SCP Universe](https://scp-wiki.wikidot.com/) and allow/accept direct sells for new releases.
 Also there will be information about future publications.
 
-
-## User Experience (UX)
-
--   ### User stories
-
-    -   #### Users
-
-        1. As a User, I want to be able to buy book
-        2. As a User, I want to the book to be send to the address I indicate
-        3. As a User, I want to be able to have a history of my purchase
-        4. As a user, I want to be able to update my address and other
-        5. As a User, I want to be able to contact with the staff/owner of the site
-	
-    -   #### Owner
-
-        1. As the Owner, I want that only registered user can buy using the page
-        2. As the Owner, I want the user to be able to maintain up to date information for their shipments
-        3. As the Owner, I want the user to be able to update their information        
-
-
--   ### Design
-
-
-    -   #### Colour Scheme
-        -   
-    -   #### Typography
-        -   
-    -   #### Imagery
-        -   The kind of images I want for the site are those related to the nature of the SCP universe, supernatural themes, conspirations etc...
-
-*   ### Wireframes
-    
 ## Features
 
 ### Existing Features
 
 - __Navigation Menu__
 
-    - Responsive Navigation menu
+    - Responsive Navigation menu, it's available on top of the page on all section of the web
 
 - __Register User page__
 
@@ -75,7 +43,39 @@ Also there will be information about future publications.
 - __Product Detail__
 
     - Functional Wishlist
-    
+
+
+## User Experience (UX)
+
+-   ### User stories
+
+    -   #### Users
+
+        1. As a User, I want to be able to buy book
+        2. As a User, I want to the book to be send to the address I indicate
+        3. As a User, I want to be able to have a history of my purchase
+        4. As a user, I want to be able to update my address and other
+        5. As a User, I want to be able to contact with the staff/owner of the site
+	
+    -   #### Owner
+
+        1. As the Owner, I want that only registered user can buy using the page
+        2. As the Owner, I want the user to be able to maintain up to date information for their shipments
+        3. As the Owner, I want the user to be able to update their information        
+
+
+-   ### Design
+
+
+    -   #### Colour Scheme
+        -   
+    -   #### Typography
+        -   
+    -   #### Imagery
+        -   The kind of images I want for the site are those related to the nature of the SCP universe, supernatural themes, conspirations etc...
+
+*   ### Wireframes    
+   
 ## Technologies Used
 
 ### Languages
@@ -145,8 +145,6 @@ Also there will be information about future publications.
 
 
 ## Deployment
-
-### GitHub Pages
 
 ### Heroku
 
