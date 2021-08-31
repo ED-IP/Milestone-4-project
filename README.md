@@ -221,7 +221,7 @@ These are the steps followed to deploy the project on Heroku
 
 12. Deploy again the project, it should connect to Amazon web services and copy the static files to your bucket
 
-11. The project is deployed at the following address:
+13. To login as superuser visit: "site address"/admin/
 
 
 ## Credits
