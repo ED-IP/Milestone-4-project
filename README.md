@@ -156,14 +156,14 @@ The mobile version of the web has been tested with the developers tools for the 
 - "Order Total" doesn't appear in order history, it's not correctly recorded in the orders table for some orders
 - Navigation options for the home page need adjustment, specially for the mobile site
 - Wishlist function not finalized
-- It's not possible to click the logout/login, the inspect tools shows the body element on top of some of the buttons, fields not allowing interaction
+- ~~It's not possible to click the logout/login, the inspect tools shows the body element on top of some of the buttons, fields not allowing interaction~~
 
 ### To do
 
 - Change the typography for the main heading in the Introduction section to one more interesting
 - In the mobile version the login, logout section need to be move down so the top navigation bar doesn't overlap some elements.
 - Adjust the animation for the SlideShow in the intro section
-- Remove the "Home" option from the mobile navigation menu
+- ~~Remove the "Home" option from the mobile navigation menu~~
 
 
 ## Deployment
