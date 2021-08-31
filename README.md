@@ -51,11 +51,10 @@ Also there will be information about future publications.
 
     -   #### Users
 
-        1. As a User, I want to be able to buy book
-        2. As a User, I want to the book to be send to the address I indicate
-        3. As a User, I want to be able to have a history of my purchase
-        4. As a user, I want to be able to update my address and other
-        5. As a User, I want to be able to contact with the staff/owner of the site
+        1. As a User, I want to be able to buy book        
+        2. As a User, I want to have a history of my previous orders
+        3. As a user, I want to be able to update my address and other personal data
+        4. As a User, I want to be able to contact with the staff/owner of the site
 	
     -   #### Owner
 
@@ -108,7 +107,17 @@ Also there will be information about future publications.
 ### Testing User Stories from User Experience (UX) Section
 
 -   #### User Goals
+    1. As a User, I want to be able to buy book:
+        - Tested with an already created user, the order appears in the user profile and it's register in the orders table in the database.
+        
+    2. As a User, I want to have a history of my previous orders:
+        - A list of previous orders is visible in the user profile section of the web
 
+    3. As a user, I want to be able to update my address and other personal data:
+        - Tested to be able to provide updated shipping information, it's possible to do it when the shipping information is provided
+
+    4. As a User, I want to be able to contact with the staff/owner of the site:
+        - Tested with an already created user, the data provided in the contact form is successfully recorded in the contact form table in the database
     
 -   #### Owner Goals
 
@@ -132,7 +141,7 @@ Also there will be information about future publications.
 - ~~Sometimes is not possible to click in the options for the drop-down menu "My account" when a logged user is in the home page (I suspect is because a toast is an "invisible" on top of the menu option)~~
 - Sorting by name not working
 - Stripe Webhooks not working on Heroku (error 500 is visible in stripe website)
-- "Order Total" doesn't appear in order history
+- "Order Total" doesn't appear in order history, it's not correctly recorded in the orders table
 - Navigation options for the home page need adjustment, specially for the mobile site
 - Wishlist function not finalized
 
