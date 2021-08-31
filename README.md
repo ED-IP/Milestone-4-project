@@ -54,11 +54,12 @@ Also there will be information about future publications.
         1. As a User, I want to be able to buy book        
         2. As a User, I want to have a history of my previous orders
         3. As a user, I want to be able to update my address and other personal data
-        4. As a User, I want to be able to contact with the staff/owner of the site
+        4. As a User, I want to be able to contact with the staff/owner of the site        
 	
     -   #### Owner
 
-        1. As the Owner, I want the user to be able to maintain up to date shipping information       
+        1. As the Owner, I want the user to be able to maintain up to date shipping information
+        2. As the Owner, I want the user to be able to register in the website
 
 
 -   ### Design
@@ -105,7 +106,8 @@ Also there will be information about future publications.
 ### Testing User Stories from User Experience (UX) Section
 
 The follwing test have been done on a Windows machine with the following browser:
-- Brave: Version 1.28.106 Chromium: 92.0.4515.159 (Official Build) (64-bit)
+- Brave Browser Version 1.28.106 Chromium: 92.0.4515.159 (Official Build) (64-bit) Windows
+- Firefox 91.0.2 (64-bit) Windows
 
 -   #### User Goals
 
@@ -125,6 +127,9 @@ The follwing test have been done on a Windows machine with the following browser
     
     1. As the Owner, I want the user to be able to update their information:
         - Test User stories number 4 proves that the users can update their information if it's needed.
+
+    2. As the Owner, I want the user to be able to register in the website:
+        - Tested creating several test user, seems that the user in correctly registred. It's neccessary to
 
     
 ### Further Testing
