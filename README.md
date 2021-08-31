@@ -1,7 +1,7 @@
 <h1 align="center">The SCP Archives Book Store</h1>
 
-The objective of this page is to promote a new book series based on the [SCP Universe](https://scp-wiki.wikidot.com/) and allow/accept direct sells for new releases.
-Also there will be information about future publications.
+The objective of this page is to promote a new book series based on the [SCP Universe](https://scp-wiki.wikidot.com/) and allow/accept direct sells for the book.
+The home page include a short introduction to the current release products, the shop for the books and a link to the official SCP site.
 
 ## Features
 
@@ -154,13 +154,14 @@ The follwing test have been done on a Windows machine with the following browser
 - "Order Total" doesn't appear in order history, it's not correctly recorded in the orders table
 - Navigation options for the home page need adjustment, specially for the mobile site
 - Wishlist function not finalized
+- It's not possible to click the logout/login, the inspect tools shows tht body element on top of some of the buttons, fields not allowing interaction
 
 ### To do
 
-- Change the typography for the main heading in the Introduction section
-- Add a link to Register user in the Login user section
+- Change the typography for the main heading in the Introduction section to one more interesting
+- In the mobile version the login, logout section need to be move down so the top navigation bar doesn't overlap some elements.
 - Adjust the animation for the SlideShow in the intro section
-- Rremove the "Home" option from the mobile navigation menu
+- Remove the "Home" option from the mobile navigation menu
 
 
 ## Deployment
@@ -222,6 +223,9 @@ These are the steps followed to deploy the project on Heroku
 
 
 ## Credits
+
+### Special thanks
+
 
 ### Code
 
