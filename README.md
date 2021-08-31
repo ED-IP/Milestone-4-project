@@ -58,9 +58,7 @@ Also there will be information about future publications.
 	
     -   #### Owner
 
-        1. As the Owner, I want that only registered user can buy using the page
-        2. As the Owner, I want the user to be able to maintain up to date information for their shipments
-        3. As the Owner, I want the user to be able to update their information        
+        1. As the Owner, I want the user to be able to maintain up to date shipping information       
 
 
 -   ### Design
@@ -106,7 +104,11 @@ Also there will be information about future publications.
 
 ### Testing User Stories from User Experience (UX) Section
 
+The follwing test have been done on a Windows machine with the following browser:
+- Brave: Version 1.28.106 Chromium: 92.0.4515.159 (Official Build) (64-bit)
+
 -   #### User Goals
+
     1. As a User, I want to be able to buy book:
         - Tested with an already created user, the order appears in the user profile and it's register in the orders table in the database.
         
@@ -119,7 +121,10 @@ Also there will be information about future publications.
     4. As a User, I want to be able to contact with the staff/owner of the site:
         - Tested with an already created user, the data provided in the contact form is successfully recorded in the contact form table in the database
     
--   #### Owner Goals
+-   #### Owner Goals    
+    
+    1. As the Owner, I want the user to be able to update their information:
+        - Test User stories number 4 proves that the users can update their information if it's needed.
 
     
 ### Further Testing
