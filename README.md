@@ -109,6 +109,8 @@ The follwing test have been done on a Windows machine with the following browser
 - Brave Browser Version 1.28.106 Chromium: 92.0.4515.159 (Official Build) (64-bit) Windows
 - Firefox 91.0.2 (64-bit) Windows
 
+The mobile version of the web has been tested with the developers tools for the previously listed desktop Browsers
+
 -   #### User Goals
 
     1. As a User, I want to be able to buy book:
@@ -129,7 +131,7 @@ The follwing test have been done on a Windows machine with the following browser
         - Test User stories number 4 proves that the users can update their information if it's needed.
 
     2. As the Owner, I want the user to be able to register in the website:
-        - Tested creating several test user, seems that the user in correctly registred. It's neccessary to
+        - Tested creating several test user, seems that the user in correctly registred.
 
     
 ### Further Testing
@@ -154,7 +156,7 @@ The follwing test have been done on a Windows machine with the following browser
 - "Order Total" doesn't appear in order history, it's not correctly recorded in the orders table
 - Navigation options for the home page need adjustment, specially for the mobile site
 - Wishlist function not finalized
-- It's not possible to click the logout/login, the inspect tools shows tht body element on top of some of the buttons, fields not allowing interaction
+- It's not possible to click the logout/login, the inspect tools shows the body element on top of some of the buttons, fields not allowing interaction
 
 ### To do
 
